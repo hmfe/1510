@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Simple search application</title>
+    <meta name="description" content="Simple search application">
+    <meta name="author" content="Saman Muradi">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="container">
+            <div id="search-container">
+                <div>
+                    <input type="search" id="search" placeholder="Search for a artists by name" oninput="search()"
+                        onfocus="show()" onfocusout="hide()">
+                </div>
+
+                <div id="search-result">
+                    <div>
+                        <ul id="returnedSearch">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="history-container">
+                <div id="top-history">
+                    <div>
+                        <h4>Search history</h4>
+                    </div>
+                    <div>
+                        <span role="button" tabindex="0" onclick="clearSearch()">Clear search history</span>
+                    </div>
+                </div>
+                <ul id="list">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

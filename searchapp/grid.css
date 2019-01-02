@@ -1,0 +1,23 @@
+/*
+Very simple grid system. 
+I could have done way more but i thought this was enough
+to make it as simple and as responsive as possible.
+*/
+
+#container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 980px) {
+    #container{
+        width: 70%;
+        margin: 0 auto;
+    }
+ }
+@media all and (max-width: 736px) { 
+    #container{
+        width:initial;
+        margin:0;
+    }
+}
